@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*=Container===============================================================================================================================*/
+html, body {
+  height: 100%;
+  line-height: 24px;
+  font-size: 16px;
+  color: white;
+  font-family: "montserrat-semibold";
+  background-color: #0c73fe;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*=Header & Footer=========================================================================================================================*/
+header, footer {
+  height: 50px;
+  width: 100wh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*=Page====================================================================================================================================*/
+#success-message, #error-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 15px;
+  font-size: 16px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+#success-message {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#error-message {
+  background-color: #f44336;
+  color: white;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1f4d8b;
+}
+.page form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.page form div select {
+  padding: 2px;
+  border-radius: 5px;
+  background-color: white;
+  color: #1f4d8b;
+  font-family: "montserrat-bold";
+}
+.page form .date input {
+  padding: 2px;
+  border-radius: 5px;
+}
+.page form .finish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page form .finish button {
+  font-family: "montserrat-bold";
+  color: #1f4d8b;
+  border-radius: 5px;
+  padding: 5px;
+}
+.page form .finish .price {
+  background-color: forestgreen;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+.page form .finish .discount {
+  font-family: "montserrat-bold";
+  color: black;
+  background-color: #ffa500;
+  padding-top: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/*=Text selection==========================================================================================================================*/
+::-moz-selection {
+  background-color: black;
+  color: #fff;
+}
+::selection {
+  background-color: black;
+  color: #fff;
+}
+
+/*=Fonts===================================================================================================================================*/
+@font-face {
+  font-family: "montserrat-black";
+  src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KalinTravel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/MyIcon.png">
+</head>
+<body>
+    <div class="wrapper">
+        <header>KalinTravel</header>
+        <main class="page">
+            <div id="success-message">Бронь прошла успешно!</div>
+            <div id="error-message">Пожалуйста, заполните все поля формы.</div>
+            <form>
+                <div class="country">
+                    <label for="country-select">Выберите страну:</label>
+                    <select id="country-select">
+                        <option value="" disabled selected>---</option>
+                        <option value="2000">Япония</option>
+                        <option value="1500">Казахстан</option>
+                        <option value="1800">Бали</option>
+                        <option value="1600">Греция</option>
+                        <option value="1700">Израиль</option>
+                        <option value="2200">ОАЭ</option>
+                        <option value="1400">Турция</option>
+                        <option value="1300">Таиланд</option>
+                        <option value="2100">Мексика</option>
+                        <option value="1200">Грузия</option>
+                        <option value="1900">Кипр</option>
+                    </select>
+                </div>
+                <div class="transport">
+                    <label for="transport-select">Выберите вид транспорта:</label>
+                    <select id="transport-select">
+                        <option value="" disabled selected>---</option>
+                        <option value="500">Самолёт</option>
+                        <option value="300">Поезд</option>
+                        <option value="700">Корабль</option>
+                        <option value="200">Автобус</option>
+                    </select>
+                </div>
+                <div class="accommodation">
+                    <label for="accommodation-select">Проживание:</label>
+                    <select id="accommodation-select">
+                        <option value="" disabled selected>---</option>
+                        <option value="1000">Отель</option>
+                        <option value="500">Частный дом</option>
+                        <option value="0">На улице</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <label for="date-input">Выберите дату поездки:</label>
+                    <input type="date" id="date-input" max="2027-12-31" min="2024-06-03">
+                </div>
+                <div class="finish">
+                    <button type="button" id="book-button">Забронировать</button>
+                    <div id="price" class="price">0$</div>
+                    <div id="discount" class="discount"></div>
+                </div>
+            </form>
+        </main>
+        <footer>by Sel Dmitry</footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
